@@ -125,3 +125,59 @@ main{
     padding-right: 1rem;
     border-radius: 10px;
 }
+/* footer page start */
+.foot-para{
+    background-color: #716844;
+    text-align: center;
+    color: #EDE6CB;
+    height: 30vh;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#input-email{
+    padding: 0px 20px ;
+    background-color: #ffffff;
+    font-size: medium;
+    height: 51px;
+    width: 277px;
+    border: none;
+    margin-top: 20px;
+}
+.foot-btn{
+    height: 51px;
+    background-color: #2B2510;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a09568;
+    width: 130px;
+    font: 300;
+    font-size: medium;
+    border: none;
+    margin-left: -3.5px;
+}
+.last-logo{
+    background-color: #2B2510;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+.ghibli-logo{
+    width: 88px;
+    height: 39.5px;
+    margin-right: 2rem;
+}
+.mad-logo{
+    width: 100px;
+    height: 27px;
+    margin-left: 2rem;
+}
