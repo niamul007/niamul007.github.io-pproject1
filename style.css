@@ -2,39 +2,200 @@
     margin: 0%;
     padding: 0%;
 }
-.img-container{
-    height: 100vh;
+ .img-container{
+    height:98vh;
+    position: relative;
     width: 100%;
-    background-image: url(pic1.jpg);
+    /* background-image: url(pic1.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 5s;
+    transition: 15s;
     animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-play-state: running;
+    /* animation-direction: alternate-reverse; */
+    /* animation-play-state: running; */
     animation-timing-function: ease-in;
     animation-duration: 30s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
-@keyframes animate{
+/* @keyframes animate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } */
+.hero{
+    height: 100vh;
+    width: 100%;
+}
+@media(width<930px){
+    .img-container{
+        height: 510px;
+    }
+    .hero{
+        height: 510px;
+        width: 100%;
+    }
+    .first-logo {
+        margin-bottom: 10rem;
+        position: absolute;
+        top: 0%;
+        left: 1rem; /* Adjust left positioning as needed */
+/* Adjust width as needed */
+    }
+    .para2{
+        height: 300px;
+        width: 100%;
+    }
+    .cele{
+        font-size: large;
+    }
+    .cele1{
+        font-size: medium;
+    }
+    .about-cele{
+        font-size: small;
+    }
+    .about-cele1{
+        font-size: small;
+    }
+}
+@media(width<600px){
+    .poster-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    
+    }
+    .poster{
+        height: 30px;
+        width: 66px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: cover;
+    }
+    .img-container{
+        height: 320px;
+    }
+    .first-logo {
+        position: absolute;
+        top: 60%;
+        left: 1rem; 
+        margin-bottom: -20px;/* Adjust left positioning as needed */
+ /* Adjust width as needed */
+    }
+    .hero{
+        height: 325px;
+        width: 100%;
+    }
+    .para2{
+        height: 300px;
+        width: 100%;
+    }
+    .cele{
+        font-size: medium;
+    }
+    .cele1{
+        font-size: small;
+    }
+    .about-cele{
+        font-size: smaller;
+    }
+    .about-cele1{
+        font-size: x-small;
+    }
+}
+@media(width<600px){
+    .poster-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    
+    }
+    .poster{
+        height: 15px;
+        width: 34px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        object-position: center;
+        object-fit: cover;
+    }
+    .img-container{
+        height: 320px;
+    }
+    .first-logo {
+        position: absolute;
+        top: 60%;
+        left: 1rem; 
+        margin-bottom: -20px;/* Adjust left positioning as needed */
+ /* Adjust width as needed */
+    }
+    .hero{
+        height: 325px;
+        width: 100%;
+    }
+    .para2{
+        height: 300px;
+        width: 100%;
+    }
+    .cele{
+        font-size: medium;
+    }
+    .cele1{
+        font-size: small;
+    }
+    .about-cele{
+        font-size: smaller;
+    }
+    .about-cele1{
+        font-size: x-small;
+    }
+}
+/* @keyframes animate{
     0%{
         background-image: url(pic3.jpg);
     }
-    20%{
-        background-image: url(pic4.jpg);
-    }
-    40%{
-        background-image: url(pic5.jpg);
-    }
-    80%{
+    10%{
         background-image: url(pic6.jpg);
     }
-    100%{
+    20%{
+        background-image: url(pic7.jpg);
+    }
+    30%{
         background-image: url(pic2.jpg);
     }
-}
+    40%{
+        background-image: url(pic4.jpg);
+    }
+    50%{
+        background-image: url(pic12.jpg);
+    }
+    60%{
+        background-image: url(pic11.jpg);
+    }
+    70%{
+        background-image: url(pic13.jpg);
+    }
+    80%{
+        background-image: url(pic5.jpg);
+    }
+    90%{
+        background-image: url(pic9.jpg);
+    }
+    100%{
+        background-image: url(pic10.jpg);
+    } 
+} */
+
 .logo{position: absolute;
     top: 80%;
     left: 1rem;
@@ -42,7 +203,18 @@
     margin-left: 1rem;
     width: 400px;
 }
-img{
+.first-logo{
+    background-image: url(ghibli_logo_white-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:90%;
+    left: 2rem;
+    height: 60px;
+    width: 133px;
+}
+.poster{
     height: 60px;
     width: 133px;
     object-position: center;
