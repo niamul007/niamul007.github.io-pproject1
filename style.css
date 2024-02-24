@@ -35,19 +35,21 @@
     width: 100%;
 }
 @media(width<930px){
+    .logo900px{
+        position: absolute;
+        top: 40vh;
+        left: 1rem;
+        display: block;
+    }
+    .first-logo{
+        display: none;
+    }
     .img-container{
         height: 510px;
     }
     .hero{
         height: 510px;
         width: 100%;
-    }
-    .first-logo {
-        margin-bottom: 10rem;
-        position: absolute;
-        top: 0%;
-        left: 1rem; /* Adjust left positioning as needed */
-/* Adjust width as needed */
     }
     .para2{
         height: 300px;
@@ -71,7 +73,6 @@
         display: flex;
         flex-wrap: wrap;
         gap:10px;
-    
     }
     .poster{
         height: 30px;
@@ -84,13 +85,6 @@
     }
     .img-container{
         height: 320px;
-    }
-    .first-logo {
-        position: absolute;
-        top: 60%;
-        left: 1rem; 
-        margin-bottom: -20px;/* Adjust left positioning as needed */
- /* Adjust width as needed */
     }
     .hero{
         height: 325px;
@@ -114,12 +108,20 @@
     }
 }
 @media(width<600px){
+
     .poster-container {
         display: flex;
         flex-wrap: wrap;
         gap:10px;
     
     }
+    .logo900px{
+        display: none;
+    }
+    .logo900px1{
+        display: none;
+    }
+
     .poster{
         height: 15px;
         width: 34px;
@@ -131,13 +133,6 @@
     }
     .img-container{
         height: 320px;
-    }
-    .first-logo {
-        position: absolute;
-        top: 60%;
-        left: 1rem; 
-        margin-bottom: -20px;/* Adjust left positioning as needed */
- /* Adjust width as needed */
     }
     .hero{
         height: 325px;
@@ -160,41 +155,6 @@
         font-size: x-small;
     }
 }
-/* @keyframes animate{
-    0%{
-        background-image: url(pic3.jpg);
-    }
-    10%{
-        background-image: url(pic6.jpg);
-    }
-    20%{
-        background-image: url(pic7.jpg);
-    }
-    30%{
-        background-image: url(pic2.jpg);
-    }
-    40%{
-        background-image: url(pic4.jpg);
-    }
-    50%{
-        background-image: url(pic12.jpg);
-    }
-    60%{
-        background-image: url(pic11.jpg);
-    }
-    70%{
-        background-image: url(pic13.jpg);
-    }
-    80%{
-        background-image: url(pic5.jpg);
-    }
-    90%{
-        background-image: url(pic9.jpg);
-    }
-    100%{
-        background-image: url(pic10.jpg);
-    } 
-} */
 
 .logo{position: absolute;
     top: 80%;
@@ -203,16 +163,42 @@
     margin-left: 1rem;
     width: 400px;
 }
+.logo900px{
+    position: absolute;
+    top: 40vh;
+    left: 2rem;
+}
+@media(min-width:900px){
+    .logo900px2{
+        display: none;
+    }
+    .logo900px{
+        display: none;
+    }
+    .logo900px1{
+        display: none;
+    }
+}
+.logo900px2{
+    position: fixed;
+    top: 18vh;
+    left: 1.5rem;
+}
 .first-logo{
     background-image: url(ghibli_logo_white-1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top:90%;
+    top:88vh;
     left: 2rem;
     height: 60px;
     width: 133px;
+}
+@media(width>600px){
+    .logo900px2{
+        display: none;
+    }
 }
 .poster{
     height: 60px;
@@ -225,6 +211,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .para2{
     display: flex;
@@ -352,4 +339,9 @@ main{
     width: 100px;
     height: 27px;
     margin-left: 2rem;
+}
+#p-logo{
+    font-family: cursive;
+    color: wheat;
+    font-weight: 300;
 }
