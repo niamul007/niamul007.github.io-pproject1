@@ -29,11 +29,48 @@
     height: 90vh;
     width: 100%;
 }
+/* for hero image */
+@media(width<1200px){
+    .hero-image{
+        height: 80vh;
+        width: 100%;
+    }
+    .hero-img{
+        height: 80vh;
+        width: 100%;
+    }
+}
+@media(width<900px){
+    .hero-image{
+        height: 549px;
+        width: 100%;
+    }
+    .hero-img{
+        height: 549px;
+        width: 100%;
+    }
+}
 .movie-name{
     font-family: cursive;
     font-weight: 500;
     font-size: xx-large;
     color: #eee3b7;
+}
+/* for anime name div */
+@media (max-width: 750px) {
+    /* Adjust position and dimensions when viewport width is less than 750px */
+    #p-monoke {
+        position: absolute;
+        right: 0%;
+        top: 63%;
+        height: 97px; /* Adjusted height */
+        width: 239px; /* Adjusted width */
+        margin-top: 0; /* Reset margin */
+        transition: 50ms;
+    }
+    .movie-name{
+        font-size: 22px;
+    }
 }
 .detail{
     position: absolute;
@@ -46,7 +83,44 @@
     align-items: center;
     background-color: #716844;
 }
-.trailer{
+/* for trailer div */
+.trailer {
+    position: absolute;
+    right: 2rem; /* Default position for width >= 1200px */
+    top: 93vh; /* Default position for width >= 1200px */
+    height: 60px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3520;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    /* Adjust position when viewport width is less than 1200px */
+    .trailer {
+        position: absolute;
+        right: 3rem;
+        top: 83%; /* Adjusted top position */
+    }
+}
+@media(max-width:900px){
+    .trailer{
+        position: absolute;
+        right: 3rem;
+        top: 78%;
+    }
+}
+@media(max-width:700px){
+    .trailer{
+        position: absolute;
+        left: 0%;
+        top: 78%;
+    }
+}
+
+/* .trailer{
     position: absolute;
     right: 2rem;
     top: 93vh;
@@ -57,7 +131,7 @@
     align-items: center;
     background-color: #3a3520;
     text-align: center;
-}
+} */
 .trailer:hover{
     background-color: #222018;
     transition: 1s;
@@ -120,6 +194,34 @@
     margin-top: .5rem;
     
 }
+@media (max-width: 650px) {
+    .anime-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anime-poster {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+    #poster-anime{
+        height: 576px;
+        width: 311px;
+    }
+
+    .anime-img {
+        margin-top: 2rem;
+    }
+
+    .about-anime {
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
 .retialer-list{
     /* height: 300px;
     width: 100%; */
@@ -162,9 +264,17 @@
     width: 176px;
     margin: 5px;
 }
+/* for footer slider img */
+@media(max-width:9000px){
+    #footer-img{
+        height:500px ;
+        width: 100%;
+    }
+
+}
 
 .hero-img-footer{
-    height: 100vh;
+    height: 700px;
     width: 100%;
 }
 .films-poster{
@@ -176,6 +286,16 @@
     height: 241px;
     width: 160px;
 }
+
+
+@media (max-width: 450px) {
+    .anime-poster {
+        flex: 1 0 45%; /* Make posters take up 45% of the container's width */
+        max-width: 150px; /* Set maximum width for the posters */
+        padding-left: 4px;
+    }
+}
+
 .view-btn{
     margin-top: 2rem;
     text-decoration: none;

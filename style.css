@@ -31,6 +31,7 @@
     }
   } */
 .hero{
+    position: relative;
     height: 100vh;
     width: 100%;
 }
@@ -66,6 +67,11 @@
     }
     .about-cele1{
         font-size: small;
+    }
+    .anime-name{
+        height: 34;
+        width: 173;
+        font-size: 14px;
     }
 }
 @media(width<600px){
@@ -154,6 +160,9 @@
     .about-cele1{
         font-size: x-small;
     }
+    .p-logo{
+        font-size: x-small;
+    }
 }
 
 .logo{position: absolute;
@@ -178,11 +187,15 @@
     .logo900px1{
         display: none;
     }
+    .p-logo{
+        font-size: small;
+        color: #EDE6CB;
+    }
 }
 .logo900px2{
-    position: fixed;
-    top: 18vh;
-    left: 1.5rem;
+    position: absolute;
+    top: 22vh;
+    left: 1rem;
 }
 .first-logo{
     background-image: url(ghibli_logo_white-1.png);
@@ -198,6 +211,10 @@
 @media(width>600px){
     .logo900px2{
         display: none;
+    }
+    .p-logo{
+        font-size: small;
+        color: #EDE6CB;
     }
 }
 .poster{
@@ -344,4 +361,21 @@ main{
     font-family: cursive;
     color: wheat;
     font-weight: 300;
+}
+
+.anime-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    height: 43px;
+    width: 193px;
+    font-size: 16px;
+    padding: 14;
+    background-color: #2B2510;
+    color: #EDE6CB;
+    position: absolute;
+    top: 6%;
+    left: 0%;
+    z-index: 99;
 }
