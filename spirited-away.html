@@ -13,25 +13,32 @@
         
     </div>
     <di class="hero-img">
-        <img src="princess1.jpg" alt="" srcset=""class="hero-image" >
+        <img src="s-pmain.jpg" alt="" srcset=""class="hero-image" >
         <div class="detail" id="p-monoke">
-            <h1 class="movie-name">Princess Mononoke</h1>
+            <h1 class="movie-name">Spirited Away</h1>
         </div>
     </div>
     <div class="trailer">
-            <h2 class="trailer1">Watch Trailer</h2>
+        <a href="" class="trailer-link" style="text-decoration: none;"> <h2 class="trailer1">Watch Trailer</h2>
+        </a>
     </div>
     <div class="anime-detail">
         <div class="anime-img">
-            <img src="i2.jpg" alt="" srcset=""class="anime-poster" id="poster-anime">
+            <img src="i1.jpg" alt="" srcset=""class="anime-poster" id="poster-anime">
         </div>
         <div class="about-anime" id="about-anime">
             <p class="director">Directed by Hayao Miyazaki</p>
             <br>
-            <h2 class="anime-title">A beautifully realized tale of civilization versus nature, PRINCESS MONONOKE is a true epic by Japan's master animator Hayao Miyazaki.
+            <h2 class="anime-title">Hayao Miyazaki’s Academy Award®-winning masterpiece returns to cinemas for a limited time in celebration of its 20th Anniversary.
             </h2>
             <p class="detail-about-anime">
-                While protecting his village from a rampaging boar-god, the young warrior Ashitaka becomes afflicted with a deadly curse. To find the cure that will save his life, he journeys deep into sacred depths of the Great Forest Spirit's realm where he meets San (Princess Mononoke), a girl raised by wolves. It's not long before Ashitaka is caught in the middle of a battle between iron-ore prospecting humans and the forest dwellers. He must summon the spirit-powers and all his courage to stop man and nature from destroying each other.
+                Chihiro thinks she is on another boring trip with her parents. But when they stop at a village that is not all that it seems, her parents undergo a mysterious transformation, and Chihiro is whisked into a world of fantastic spirits, shape-shifting dragons and a witch who never wants to see her leave. She must call on the courage she never knew she had to free herself and return her family to the outside world.
+                <br>
+                The second biggest box office hit of all time in Japan, Spirited Away helped redefine the possibilities of animation for Western audiences and a generation of new filmmakers.
+                <br>
+                bCombining Japanese mythology with Alice in Wonderland-type whimsy, Spirited Away cemented Miyazaki’s reputation as an icon of animation and storytelling.
+
+            Pleast note: All VIC and SA locations willl begin scheduling their screenings from July 28 onwards. Please check with your preferred cinema to confirm dates and session times. All screenings at cinemas within greater Sydney area remain postponed until further notice, although we plan to resume all screenings at these locations as soon as local government restrictions permit.
             </p>
             <p class="anime-show">
                 Get swept up in the celebrated masterpiece with a limited edition steelbook exclusive from JB HI-FI by clicking here.
@@ -84,7 +91,33 @@
         <img src="madman_logo_hor.png" alt="" srcset="" class="mad-logo">
         <img src="ghibli_logo_white-1.png" alt="" srcset="" class="ghibli-logo">
       </div>
-    <script src="princess-monoke.js"></script>
+    <script>
+                    let pic = document.querySelector(".hero-img-footer"); // Selecting the image element by its name
+
+            let i = 0;
+            let img = [];
+            img[0] = "s-p1.png";
+            img[1] = "s-p2.jpg";
+            img[2] = "s-p3.jpg";
+            img[3] = "s-p4.jpg";
+            img[4] ="s-p5.jpg";
+
+
+
+            function changeImg() {
+            pic.src = img[i]; // Setting the source of the image using the 'pic' reference
+
+            if (i < img.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changeImg, 5000); // Passing the function directly to setTimeout instead of a string
+            }
+
+            window.onload = changeImg;
+
+    </script>
 </body>
 </html>
 
