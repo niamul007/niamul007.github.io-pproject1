@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster</title>
+    <link rel="stylesheet" href="princess-monoke.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="nav-a">Home</a>
+        <a href="#"class="nav-a" >Films</a>
+        
+    </div>
+    <di class="hero-img">
+        <img src="nausica3.webp" alt="" srcset=""class="hero-image" >
+        <div class="detail" id="p-monoke">
+            <h1 class="movie-name">Nausicaä of the Valley of the Wind </h1>
+        </div>
+    </div>
+    <div class="trailer">
+        <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" class="trailer-link" style="text-decoration: none;"> <h2 class="trailer1">Watch Trailer</h2>
+        </a>
+    </div>
+    <div class="anime-detail">
+        <div class="anime-img">
+            <img src="i11.jpg" alt="" srcset=""class="anime-poster" id="poster-anime">
+        </div>
+        <div class="about-anime" id="about-anime">
+            <p class="director">Directed by Hayao Miyazaki</p>
+            <br>
+            <h2 class="anime-title">Hayao Miyazaki’s epic masterpiece!
+            </h2>
+            <p class="detail-about-anime">
+                A thousand years after a great war, a seaside kingdom known as the Valley of the Wind is one of the only areas that remains populated. Led by the courageous Princess Nausicaä, the people of the Valley are engaged in a constant struggle with powerful insects called ohmu, who guard a poisonous jungle that is spreading across the Earth. Nausicaä and her brave companions, together with the people of the Valley, strive to restore the bond between humanity and the earth.
+            </p>
+            <p class="anime-show">
+                Get swept up in the celebrated masterpiece with a limited edition steelbook exclusive from JB HI-FI by clicking here.
+            </p>
+            <p class="anime-showtime">
+                Year of Production: <strong>1984</strong> • Runtime: <strong>116 mins </strong>• Languages:<strong> English </strong>• Subtitles: <strong> Japanese</strong>
+            </p>
+        </div>
+    </div>
+    <div class="retialer-list">
+        <div class="digital-info-anime">
+            <p class="digital-right">
+                Nausicaä of the Valley of the Wind on Digital
+            </p>
+            <p class="rental-info">
+                Buy or rent Nausicaä of the Valley of the Wind from the following digital retailers:
+            </p>
+        </div>
+        <div class="digital-retailer">
+            <img src="retailer_logo_apple.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_amazon.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_google.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_fetch.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_microsoft.png" alt="" class="retailer-pic">
+        </div>
+    </div>
+    <div class="footer-hero-img-div">
+        <img src="" alt="" srcset="" class="hero-img-footer" id="footer-img">
+    </div>
+    <div class="films-poster">
+        <a href="spirited-away.html" class="anime-poster"><img class="poster" src="i1.jpg" alt="" srcset=""></a>
+        <a href="princess-monoke.html" class="anime-poster"><img class="poster" src="i2.jpg" alt="" srcset=""></a>
+        <a href="totoro.html" class="anime-poster"><img class="poster" src="i3.jpg" alt="" srcset=""></a>
+        <a href="porco.html" class="anime-poster"><img class="poster" src="i4.jpg" alt="" srcset=""></a>
+        <a href="whisper.html" class="anime-poster"><img class="poster" src="i5.jpg" alt="" srcset=""></a>
+        <a href="#" class="anime-poster"><img class="poster" src="i6.jpg" alt="" srcset=""></a>
+    </div>
+    <div class="btn">
+        <a href="#" class="view-btn"><h3 class="view-films-btn">View All Films</h3></a>
+
+    </div>
+
+    <div class="footer-in-div">
+        <h4 class="love-studio">Love STUDIO GHIBLI as much as we do? Sign up for updates and stay in the loop!</h4>
+        <input type="email" name="" id="input-email" class="input" placeholder="Enter your email address">
+        <button type="submit" class="foot-btn" id="footer-btn">Subscribe</button>
+    </div>
+    <div class="billborad"></div>
+    <div class="last-logo">
+        <img src="madman_logo_hor.png" alt="" srcset="" class="mad-logo">
+        <img src="ghibli_logo_white-1.png" alt="" srcset="" class="ghibli-logo">
+    </div>
+    <script>
+            let pic = document.querySelector(".hero-img-footer"); // Selecting the image element by its name
+
+            let i = 0;
+            let img = [];
+            img[0] = "nausica1.jpg";
+            img[1] = "nausica2.jpg";
+            img[2] = "nausica3.webp";
+            img[3] = "nausica4.jpg";
+            img[3] = "nausica5.png";
+
+            function changeImg() {
+            pic.src = img[i]; // Setting the source of the image using the 'pic' reference
+
+            if (i < img.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changeImg, 5000); // Passing the function directly to setTimeout instead of a string
+            }
+
+            window.onload = changeImg;
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster</title>
+    <link rel="stylesheet" href="princess-monoke.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="nav-a">Home</a>
+        <a href="#"class="nav-a" >Films</a>
+        
+    </div>
+    <di class="hero-img">
+        <img src="only2.jpg" alt="" srcset=""class="hero-image" >
+        <div class="detail" id="p-monoke">
+            <h1 class="movie-name">Only Yesterday</h1>
+        </div>
+    </div>
+    <div class="trailer">
+        <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" class="trailer-link" style="text-decoration: none;"> <h2 class="trailer1">Watch Trailer</h2>
+        </a>
+    </div>
+    <div class="anime-detail">
+        <div class="anime-img">
+            <img src="i16.jpg" alt="" srcset=""class="anime-poster" id="poster-anime">
+        </div>
+        <div class="about-anime" id="about-anime">
+            <p class="director">Directed by Isao Takahata</p>
+            <br>
+            <h2 class="anime-title">The key to Taeko's future, lies in her past.
+            </h2>
+            <p class="detail-about-anime">
+                Taeko, a single woman working a desk job in Tokyo, has reached a point in her life where she needs to get away from her job, her family and most of all, big city life. A much needed vacation to the countryside stirs childhood memories, recalling her time as a schoolgirl in 1966. Amidst beautiful country scenery, Taeko reflects on her life and forming new friendships, begins to make some tough decisions about her future.
+            </p>
+            <p class="anime-show">
+                Get swept up in the celebrated masterpiece with a limited edition steelbook exclusive from JB HI-FI by clicking here.
+            </p>
+            <p class="anime-showtime">
+                Year of Production: <strong>1991</strong> • Runtime: <strong>119 mins </strong>• Languages:<strong> English </strong>• Subtitles: <strong> Japanese</strong>
+            </p>
+        </div>
+    </div>
+    <div class="retialer-list">
+        <div class="digital-info-anime">
+            <p class="digital-right">
+                Only Yesterday on Digital
+            </p>
+            <p class="rental-info">
+                Buy or rent Only Yesterday from the following digital retailers:
+            </p>
+        </div>
+        <div class="digital-retailer">
+            <img src="retailer_logo_apple.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_amazon.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_google.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_fetch.png" alt="" class="retailer-pic">
+            <img src="retailer_logo_microsoft.png" alt="" class="retailer-pic">
+        </div>
+    </div>
+    <div class="footer-hero-img-div">
+        <img src="" alt="" srcset="" class="hero-img-footer" id="footer-img">
+    </div>
+    <div class="films-poster">
+        <a href="spirited-away.html" class="anime-poster"><img class="poster" src="i1.jpg" alt="" srcset=""></a>
+        <a href="princess-monoke.html" class="anime-poster"><img class="poster" src="i2.jpg" alt="" srcset=""></a>
+        <a href="totoro.html" class="anime-poster"><img class="poster" src="i3.jpg" alt="" srcset=""></a>
+        <a href="porco.html" class="anime-poster"><img class="poster" src="i4.jpg" alt="" srcset=""></a>
+        <a href="whisper.html" class="anime-poster"><img class="poster" src="i5.jpg" alt="" srcset=""></a>
+        <a href="#" class="anime-poster"><img class="poster" src="i6.jpg" alt="" srcset=""></a>
+    </div>
+    <div class="btn">
+        <a href="#" class="view-btn"><h3 class="view-films-btn">View All Films</h3></a>
+
+    </div>
+
+    <div class="footer-in-div">
+        <h4 class="love-studio">Love STUDIO GHIBLI as much as we do? Sign up for updates and stay in the loop!</h4>
+        <input type="email" name="" id="input-email" class="input" placeholder="Enter your email address">
+        <button type="submit" class="foot-btn" id="footer-btn">Subscribe</button>
+    </div>
+    <div class="billborad"></div>
+    <div class="last-logo">
+        <img src="madman_logo_hor.png" alt="" srcset="" class="mad-logo">
+        <img src="ghibli_logo_white-1.png" alt="" srcset="" class="ghibli-logo">
+    </div>
+    <script>
+            let pic = document.querySelector(".hero-img-footer"); // Selecting the image element by its name
+
+            let i = 0;
+            let img = [];
+            img[0] = "only1.jpg";
+            img[1] = "only2.jpg";
+            img[2] = "only3.jpg";
+            img[3] = "only4.jpg";
+            img[4] = "only5.jpg";
+
+            function changeImg() {
+            pic.src = img[i]; // Setting the source of the image using the 'pic' reference
+
+            if (i < img.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changeImg, 5000); // Passing the function directly to setTimeout instead of a string
+            }
+
+            window.onload = changeImg;
+
+    </script>
+</body>
+</html>
+
