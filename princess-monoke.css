@@ -29,11 +29,11 @@
     color: white;
 }
 .hero-img{
-    height: 100vh;
+    height: 96vh;
     width: 100%;
 }
 .hero-image {
-    height: 100vh;
+    height: 96vh;
     width: 100%;
 }
 
@@ -107,7 +107,7 @@
     position: absolute;
     right: 2rem;
     /* Default position for width >= 1200px */
-    top: 93vh;
+    top: 98vh;
     /* Default position for width >= 1200px */
     height: 60px;
     width: 230px;
