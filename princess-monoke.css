@@ -105,6 +105,7 @@
 /* for trailer div */
 .trailer {
     position: absolute;
+    
     right: 2rem;
     /* Default position for width >= 1200px */
     top: 98vh;
@@ -116,7 +117,9 @@
     align-items: center;
     background-color: #3a3520;
     text-align: center;
+
 }
+
 
 @media (max-width: 1200px) {
 
@@ -142,6 +145,32 @@
         position: absolute;
         left: 0%;
         top: 54%;
+    }
+}
+@media(max-width:500px){
+    .trailer {
+        position: absolute;
+        left: 0%;
+        top: 55%;
+    }
+
+}
+@media(max-width:400px){
+    .trailer {
+        position: absolute;
+        left: 0%;
+        top: 54%;
+    }
+    #p-monoke {
+        position: absolute;
+        right: 0%;
+        top: 43%;
+        height: 97px;
+        /* Adjusted height */
+        width: 239px;
+        /* Adjusted width */
+        margin-top: 0;
+        /* Reset margin */
     }
 }
 
@@ -405,6 +434,13 @@
     #footer-btn{
         height: 51px;
         width: 99px;
+    }
+}
+@media(max-width:390px){
+    #input-email {
+        height: 51px;
+        width: 126px;
+
     }
 }
 .input {

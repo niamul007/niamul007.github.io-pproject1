@@ -21,5 +21,10 @@ function changeImg() {
   }
   setTimeout(changeImg, 5000); // Passing the function directly to setTimeout instead of a string
 }
+window.onload = function() {
+  var div = document.querySelector('.trailer');
+  div.classList.add('visible');
+};
+
 
 window.onload = changeImg;
